@@ -1,13 +1,11 @@
 name: Telepresence
-description: Fast local development for Kubernetes and OpenShift microservices. Routes
-  traffic from your Kubernetes cluster to your local machine, allowing you to develop
-  and debug services locally while connected to a remote cluster.
+description: Fast local development for Kubernetes and OpenShift microservices. Routes traffic from your Kubernetes cluster to your local machine, allowing you to develop and debug services locally while connected to a remote cluster.
 url: https://www.telepresence.io/
 tags:
-- Kubernetes
-- Development Tools
-- Microservices
-- Debugging
+  - Debugging
+  - Development Tools
+  - Kubernetes
+  - Microservices
 created: '2025'
 modified: '2026-03-16'
 apis: []
