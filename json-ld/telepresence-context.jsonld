@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "k8s": "https://kubernetes.io/vocabulary/",
+    "tp": "https://telepresence.io/vocabulary/",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "SoftwareApplication": {
+      "@id": "schema:SoftwareApplication",
+      "@context": {
+        "applicationCategory": "schema:applicationCategory",
+        "operatingSystem": "schema:operatingSystem",
+        "programmingLanguage": "schema:programmingLanguage",
+        "license": "schema:license",
+        "codeRepository": "schema:codeRepository"
+      }
+    },
+    "Intercept": {
+      "@id": "tp:Intercept",
+      "@context": {
+        "workload": "tp:workload",
+        "namespace": "k8s:namespace",
+        "port": "tp:port",
+        "mechanism": "tp:mechanism"
+      }
+    },
+    "TrafficManager": {
+      "@id": "tp:TrafficManager",
+      "@context": {
+        "namespace": "k8s:namespace",
+        "version": "schema:version"
+      }
+    },
+    "TrafficAgent": {
+      "@id": "tp:TrafficAgent",
+      "@context": {
+        "pod": "k8s:pod",
+        "container": "k8s:container"
+      }
+    },
+    "Cluster": {
+      "@id": "k8s:Cluster",
+      "@context": {
+        "context": "tp:kubeContext",
+        "namespace": "k8s:namespace"
+      }
+    }
+  }
+}

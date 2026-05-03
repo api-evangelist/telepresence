@@ -1,0 +1,88 @@
+vocabulary:
+  provider: Telepresence
+  description: >-
+    Core vocabulary for Telepresence, the CNCF Sandbox tool for local Kubernetes
+    microservice development. Covers key concepts for cluster connectivity, traffic
+    intercept, and developer workflow patterns.
+  tags:
+    - Developer Tools
+    - Kubernetes
+    - Open Source
+  terms:
+    - term: Intercept
+      definition: >-
+        A Telepresence mechanism that routes traffic destined for a workload running
+        in a Kubernetes cluster to a service running on the developer's local machine.
+        Supports global intercepts (all traffic) and personal intercepts (filtered traffic).
+      tags:
+        - Development
+        - Traffic Routing
+    - term: Traffic Manager
+      definition: >-
+        The cluster-side component of Telepresence deployed in the ambassador namespace.
+        It is the central communication hub between Traffic Agents in pods and Telepresence
+        daemons on developer workstations. Responsible for injecting Traffic Agent sidecars,
+        proxying traffic, and tracking active intercepts.
+      tags:
+        - Architecture
+        - Cluster Component
+    - term: Traffic Agent
+      definition: >-
+        A sidecar container injected by the Traffic Manager into pods when an intercept
+        is established. It captures and proxies the traffic between the cluster and the
+        developer's local machine.
+      tags:
+        - Architecture
+        - Sidecar
+    - term: Daemon
+      definition: >-
+        The local background process on the developer's workstation that manages the
+        virtual network interface and communicates with the Traffic Manager in the cluster.
+      tags:
+        - Architecture
+        - Local Component
+    - term: Connect
+      definition: >-
+        The Telepresence CLI command that establishes a bidirectional network connection
+        between the developer's local machine and a remote Kubernetes cluster, enabling
+        DNS resolution of cluster services locally.
+      tags:
+        - CLI
+        - Connectivity
+    - term: Namespace
+      definition: >-
+        A Kubernetes namespace scope for Telepresence operations. Telepresence can be
+        scoped to specific namespaces to limit intercept capabilities.
+      tags:
+        - Kubernetes
+        - Scoping
+    - term: Preview URL
+      definition: >-
+        A shareable URL generated when using Ambassador Cloud with Telepresence that
+        routes requests to the intercepted local service for collaborative testing.
+      tags:
+        - Collaboration
+        - Testing
+    - term: CNCF Sandbox
+      definition: >-
+        Cloud Native Computing Foundation Sandbox stage — the entry-level classification
+        for CNCF projects that show promise for the cloud-native ecosystem but are early
+        in their adoption lifecycle.
+      tags:
+        - CNCF
+        - Governance
+    - term: Helm Chart
+      definition: >-
+        The Kubernetes package manager manifest used to deploy Telepresence's Traffic
+        Manager into a Kubernetes cluster. Available at charts.telepresence.io.
+      tags:
+        - Deployment
+        - Kubernetes
+    - term: gRPC
+      definition: >-
+        The remote procedure call framework used for internal communication between
+        Telepresence components. The Traffic Manager exposes gRPC services for the
+        daemon and agents to communicate with.
+      tags:
+        - Architecture
+        - Protocol
