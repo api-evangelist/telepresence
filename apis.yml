@@ -23,11 +23,11 @@ common:
     url: https://telepresence.io/
   - type: Documentation
     url: https://telepresence.io/docs
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/telepresenceio
-  - type: GitHub Repository
+  - type: GitHubRepository
     url: https://github.com/telepresenceio/telepresence
-  - type: Changelog
+  - type: ChangeLog
     url: https://github.com/telepresenceio/telepresence/blob/main/CHANGELOG.yml
   - type: License
     url: https://github.com/telepresenceio/telepresence/blob/main/LICENSE
