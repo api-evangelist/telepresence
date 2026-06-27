@@ -35,7 +35,7 @@ common:
     url: https://github.com/telepresenceio/telepresence/blob/main/CODE-OF-CONDUCT.md
   - type: Security
     url: https://github.com/telepresenceio/telepresence/blob/main/SECURITY.md
-  - type: SDK
+  - type: SDKs
     url: https://github.com/telepresenceio/telepresence
 maintainers:
   - FN: Kin Lane
