@@ -19,6 +19,8 @@ tags:
   - Open Source
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/telepresence-domain-security.yml
   - type: Website
     url: https://telepresence.io/
   - type: Documentation
