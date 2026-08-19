@@ -21,7 +21,7 @@ description: >-
   specific cluster workloads and route it to their local environment for testing and debugging.
 url: https://raw.githubusercontent.com/api-evangelist/telepresence/refs/heads/main/apis.yml
 modified: '2026-05-03'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 tags:
   - CNCF
   - Developer Tools
