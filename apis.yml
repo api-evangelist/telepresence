@@ -1,4 +1,15 @@
 aid: telepresence
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -38,6 +49,16 @@ tags_raw:
   - Open Source
 apis: []
 common:
+  - type: IssueTracker
+    url: https://github.com/telepresenceio/telepresence/issues
+  - type: Releases
+    url: https://github.com/telepresenceio/telepresence/releases
+  - type: SecurityPolicy
+    url: https://github.com/telepresenceio/telepresence/blob/release/v2/SECURITY.md
+  - type: CodeOfConduct
+    url: https://github.com/telepresenceio/telepresence/blob/release/v2/CODE-OF-CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/telepresenceio/telepresence/blob/release/v2/docs/CONTRIBUTING.md
   - type: DomainSecurity
     url: security/telepresence-domain-security.yml
   - type: Website
